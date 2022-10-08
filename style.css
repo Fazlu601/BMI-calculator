@@ -1,0 +1,126 @@
+
+:root {
+    --text-color :  #333333;
+    --primary-color :  #333333;
+    --secondary-color : #6558F5;
+    --background-color : #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+.weight-medium {
+    font-weight: 600;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+main {
+    width: 45%;
+    margin: 50px auto 0;
+}
+
+h1.title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.form-group {
+    width: 100%;
+    margin: 30px 5px;
+}
+input {
+    width: 100%;
+    padding: 15px 13px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid  #333333;
+    background-color: whitesmoke;
+}
+
+input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+button {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    color: #FAFAFA;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 0;
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #382cbd;
+    transition: 0.8s;
+}
+
+p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+/* Breakpoint Media Query */
+@media screen and (max-width: 850px) {
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 18px;
+    }
+    main {
+        width: 60%;
+    }
+
+    input, label {
+        font-size: 18px;
+    }
+    
+    button {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    main {
+        width: 80%;
+    }
+    h1 {
+        font-size: 25px;
+    }
+}
+
+
+.fade-in{
+    animation: fadeIn 1s;
+}
+/* Keyframes Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
